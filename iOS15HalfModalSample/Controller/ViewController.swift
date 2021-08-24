@@ -27,7 +27,12 @@ private extension ViewController {
         let vc = HalfModalViewController()
         if let sheet = vc.sheetPresentationController {
             sheet.detents = [.medium(), .large()]
+            // ハンドルを表示
             sheet.prefersScrollingExpandsWhenScrolledToEdge = true
+            // グラバーを表示
+            sheet.prefersGrabberVisible = true
+            // 角丸
+            sheet.preferredCornerRadius = 24.0
         }
         present(vc, animated: true, completion: nil)
     }
