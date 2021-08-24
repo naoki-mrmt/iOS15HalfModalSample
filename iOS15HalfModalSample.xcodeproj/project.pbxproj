@@ -13,6 +13,8 @@
 		7F98651F26D4935F00F92AEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F98651D26D4935F00F92AEF /* Main.storyboard */; };
 		7F98652126D4936300F92AEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F98652026D4936300F92AEF /* Assets.xcassets */; };
 		7F98652426D4936300F92AEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F98652226D4936300F92AEF /* LaunchScreen.storyboard */; };
+		7F98652C26D4946B00F92AEF /* HalfModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F98652B26D4946B00F92AEF /* HalfModalViewController.swift */; };
+		7F98653426D494CF00F92AEF /* HalfModal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F98653326D494CF00F92AEF /* HalfModal.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		7F98652026D4936300F92AEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F98652326D4936300F92AEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F98652526D4936300F92AEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F98652B26D4946B00F92AEF /* HalfModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfModalViewController.swift; sourceTree = "<group>"; };
+		7F98653326D494CF00F92AEF /* HalfModal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HalfModal.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,65 @@
 		7F98651626D4935F00F92AEF /* iOS15HalfModalSample */ = {
 			isa = PBXGroup;
 			children = (
-				7F98651726D4935F00F92AEF /* AppDelegate.swift */,
-				7F98651926D4935F00F92AEF /* SceneDelegate.swift */,
-				7F98651B26D4935F00F92AEF /* ViewController.swift */,
-				7F98651D26D4935F00F92AEF /* Main.storyboard */,
+				7F98653226D4949300F92AEF /* Application */,
+				7F98653126D4948900F92AEF /* Utility */,
+				7F98653026D4948400F92AEF /* Model */,
+				7F98652F26D4947F00F92AEF /* View */,
+				7F98652E26D4947800F92AEF /* Controller */,
+				7F98652D26D4947000F92AEF /* Extension */,
 				7F98652026D4936300F92AEF /* Assets.xcassets */,
-				7F98652226D4936300F92AEF /* LaunchScreen.storyboard */,
 				7F98652526D4936300F92AEF /* Info.plist */,
 			);
 			path = iOS15HalfModalSample;
+			sourceTree = "<group>";
+		};
+		7F98652D26D4947000F92AEF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		7F98652E26D4947800F92AEF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7F98651B26D4935F00F92AEF /* ViewController.swift */,
+				7F98652B26D4946B00F92AEF /* HalfModalViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7F98652F26D4947F00F92AEF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7F98652226D4936300F92AEF /* LaunchScreen.storyboard */,
+				7F98651D26D4935F00F92AEF /* Main.storyboard */,
+				7F98653326D494CF00F92AEF /* HalfModal.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7F98653026D4948400F92AEF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7F98653126D4948900F92AEF /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		7F98653226D4949300F92AEF /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				7F98651926D4935F00F92AEF /* SceneDelegate.swift */,
+				7F98651726D4935F00F92AEF /* AppDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +182,7 @@
 				7F98652426D4936300F92AEF /* LaunchScreen.storyboard in Resources */,
 				7F98652126D4936300F92AEF /* Assets.xcassets in Resources */,
 				7F98651F26D4935F00F92AEF /* Main.storyboard in Resources */,
+				7F98653426D494CF00F92AEF /* HalfModal.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +196,7 @@
 				7F98651C26D4935F00F92AEF /* ViewController.swift in Sources */,
 				7F98651826D4935F00F92AEF /* AppDelegate.swift in Sources */,
 				7F98651A26D4935F00F92AEF /* SceneDelegate.swift in Sources */,
+				7F98652C26D4946B00F92AEF /* HalfModalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

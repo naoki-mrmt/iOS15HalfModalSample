@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  iOS15HalfModalSample
 //
-//  Created by cmStudent on 2021/08/24.
+//  Created by naoki-mrnk on 2021/08/24.
 //
 
 import UIKit
